@@ -55,12 +55,14 @@
   
 
   </br>
- 
+  <div class="text-xs-right">
+        @include("shopping_carts.form")
+      </div>
     
-  <div class="text-right" >
+ <!-- <div class="text-right" >
       <button class="btn btn-primary" id="Actualizar_carrito">Enviar Datos</button>
 
-   </div> 
+   </div> -->
      @else 
      <div class="col-md-4"></div>
      <div class="col-md-4 text-center">
@@ -71,9 +73,7 @@
      </div>
   @endif
    <br><br>
-      <!--<div class="text-xs-right">
-        @include("shopping_carts.form")
-      </div>-->
+     
 
 
   <form action="{{ url('/in_shopping_carts/:id_shoping_cart') }} " id="form-delete" method="delete">

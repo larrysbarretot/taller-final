@@ -32,7 +32,7 @@ class InShoppingCartsController extends Controller
     public function store(Request $request)
     {
         $shopping_cart = $request->shopping_cart;
-        
+
         $response = InShoppingCart::create(["shopping_cart_id" => $shopping_cart->id,"product_id" => $request->product_id ,"cant"=>1,"subtotal"=>$request->product_pricing]);
 
       

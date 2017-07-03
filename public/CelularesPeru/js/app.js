@@ -17,9 +17,6 @@ var TiendaVirtual = angular.module('Tienda', [])
 
 TiendaVirtual.controller('Tiendita', function ($scope,$http) {
 
-
-
-
 $scope.estado="";
 $scope.inShoppingCart = _inShoppingCart;
 
@@ -27,18 +24,40 @@ $scope.inShoppingCart = _inShoppingCart;
 $scope.totalsuma=_total; 
 $scope.total=$scope.totalsuma.total;
 
- $scope.CalcularSubTotal=function(){
+
+//Enviar datos  a actualizar
+
+$scope.actualizarCarrito=function(){
  
+ var form=$(".form-actualizar");
+
+   
+     
+      var data=form.serialize();
+     //		 alert(data.length);
+      datas=data.split("&_method");
+    
+      for(i=0;i<$scope.inShoppingCart.length;i++){
+      	    
+      	datas[i+1]="_method"+datas[i+1];
+      	var aux=$scope.inShoppingCart[i];
+       var j=(aux);
+       console.log(j.precio);
+      	var url=form.attr('action').replace(':id_shoping_cart',$scope.inShoppingCart[i].id);
+      	$.post(url,datas[i],function(response){});
+       }
+}
+ $scope.CalcularSubTotal=function(){
  	$scope.total=0;
 	for(i=0;i<$scope.inShoppingCart.length;i++){
 
 	$scope.inShoppingCart[i].subTotal=$scope.inShoppingCart[i].cant*$scope.inShoppingCart[i].precio;
 	$scope.total=$scope.inShoppingCart[i].subTotal+$scope.total;
+	console.log($scope.inShoppingCart[i].subTotal);
 	}
 
 	}
 
-//Enviar datos  a actualizar
 
 	$("#Actualizar_carrito").click(function(e){
 
@@ -49,15 +68,17 @@ $scope.total=$scope.totalsuma.total;
      
       var data=form.serialize();
      //		 alert(data.length);
+     
       datas=data.split("&_method");
-    
-      for(i=0;i<datas.length;i++){
-      	    
+      for(i=0;i<$scope.inShoppingCart.length;i++){
+      	console.log(i)
+      	console.log(datas[i]);
       	datas[i+1]="_method"+datas[i+1];
-
+      	
+       //console.log(aux);
       	var url=form.attr('action').replace(':id_shoping_cart',$scope.inShoppingCart[i].id);
+      	console.log("url "+url)
       	$.post(url,datas[i],function(response){});
-
       
      }
 

@@ -2,7 +2,7 @@
 
 	
 	
-      <input type="submit" class="btn btn-success" value="Realizar Pago"></input>
+      <input id="Actualizar_carrito" type="submit" class="btn btn-success" value="Realizar Pago"></input>
 	</br>
 	</br>
     

@@ -8,7 +8,7 @@ use App\Http\Requests;
 
 use App\ShoppingCart;
 
-use App\Paypal;
+use App\PayPal;
 
 use App\Order;
 
@@ -23,7 +23,7 @@ class PaymentsController extends Controller
     public function store(Request $request){
         $shopping_cart = $request->shopping_cart;
 
-        $paypal = new Paypal($shopping_cart);
+        $paypal = new PayPal($shopping_cart);
 
         $response = $paypal->execute($request->paymentId,$request->PayerID);
 
