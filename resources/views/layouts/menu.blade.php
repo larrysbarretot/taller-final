@@ -2,7 +2,7 @@
   <nav id="navMenu" class="navbar-toggleable-xs navbar navbar-light collapse">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-lg-9">
+        <div class="col-sm-12 col-lg-8">
           <ul class="nav navbar-nav">
             <li class="nav-item text-xs-center">
               <a href="{{url('/')}}" class="nav-link active"><span class="icon-home-outline"> Home</span></a>
@@ -40,7 +40,7 @@
             @endif
           </ul>
         </div>
-        <div class="col-xs-12 col-lg-3 hidden-xs-down">
+        <div class="col-sm-12 col-lg-4 hidden-xs-down">
           <form>
             <div class="input-group">
               <input  type="text" class="form-control" placeholder="¿Qué está buscando?"></input>

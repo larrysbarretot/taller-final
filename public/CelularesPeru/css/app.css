@@ -255,12 +255,6 @@ ul.redes li
 	text-align: center;
 }
 
-/* Menu responsive */
-ul.nav li {
-	display: block;
-}
-/* find menu */
-
 ul.foot li
 {
 	display: inline-block;
