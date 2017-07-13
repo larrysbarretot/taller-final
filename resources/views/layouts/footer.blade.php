@@ -11,7 +11,7 @@
           <li><a href="#"><i class="fa fa-youtube-square fa-2x"></i></a></li>
         </ul>
         <h3>Escribenos: </h3>
-        <i class="fa fa-at" ></i><a href="#">peruvianexus@gmail.com</a>
+        <i class="fa fa-at" ></i> <a href="#">peruvianexus@gmail.com</a>
       </div>
       <div class="col-md-4">
         <div class="author-info">

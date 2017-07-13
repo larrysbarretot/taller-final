@@ -13,7 +13,7 @@
           <div id="mensaje" class="mensaje_estilos"></div>
         </div>
       </div>
-      <div class="col-md-3 col-sm-6">
+      <div class="col-md-4 col-sm-6">
         <div class="contact-info bottom">
           <h2>Peruvian Nexus</h2>
           <address>

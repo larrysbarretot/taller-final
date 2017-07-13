@@ -16,8 +16,8 @@
               @endif
               <div class="card-block">
                 <div class="inblock">
-                  <h3 class="card-title tituloprod">{{$product->title}} </h3>
-                  <h2 class="precioprod"><strong>s/{{$product->pricing}}</strong></h2>
+                  <h3 class="card-title tituloprod text-center">{{$product->title}} </h3>
+                  <h2 class="precioprod text-center"><strong>s/{{$product->pricing}}</strong></h2>
                 </div>
                 <p><strong>Marca:  </strong>{{$product->marca}}</p>
                 <p><strong>Gama:  </strong>{{$product->gama}}</p>
@@ -29,7 +29,7 @@
                   @include("in_shopping_carts.form",["product"=>$product])
                 </p>
                 @if(Auth::check() && $product->user_id == Auth::user()->id)
-                <div>
+                <div class="text-xs-center">
                   <a href="{{url('/products/'.$product->id.'/edit')}}">Editar</a>
                   @include('products.delete',['product'=>$product])
                 </div>

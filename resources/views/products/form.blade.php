@@ -6,7 +6,7 @@
   {{ Form::text('marca',$product->marca,['class' => 'form-control','placeholder'=>'Marca...'])}}
 </div>
 <div class="form-group">
-  {{Form::file('cover')}}
+  {{Form::file('cover', ['class'=> 'form-control'])}}
 </div>
 <div class="form-group">
   {{ Form::text('gama',$product->gama,['class' => 'form-control','placeholder'=>'Gama...'])}}
