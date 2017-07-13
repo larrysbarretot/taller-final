@@ -113,7 +113,8 @@ input.form-control:focus{
 
 
 #footer-container .nav-link:hover{
-	color: black;
+	color: #ccc;
+	background: transparent;
 }
 
 #filtros-container .list-group-item-action.active{
@@ -205,7 +206,11 @@ input.form-control:focus{
 	background-color: #d4e157;
 }
 
-
+#footer-container{
+	background-color: #083A6C; 
+	color: white;
+	padding: 4em 0;
+}
 
 @media (max-width: 768px){
 	#footer-container [class*="col-"]{
@@ -226,12 +231,7 @@ input.form-control:focus{
 
 
 
-#footer-container{
-	background-color: #083A6C; 
-	color: white;
-	padding: 1em 0;
 
-}
 
 
 	.listado-celulares .card-img-top{
@@ -255,13 +255,11 @@ ul.redes li
 	text-align: center;
 }
 
-ul.nav li
-{
-	display: inline-block;
-
-;
-	
+/* Menu responsive */
+ul.nav li {
+	display: block;
 }
+/* find menu */
 
 ul.foot li
 {

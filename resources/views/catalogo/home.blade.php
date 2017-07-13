@@ -29,17 +29,23 @@
 </style>
 @endpush
 @section('content')
-<div class="row" ng-app="Tienda" ng-controller="CatalogoController">
-  <div class="col-md-3">
-    @include('catalogo.sidebar')
-  </div>
-  <div class="col-md-9 ">
-    @foreach ($products as $product)
-      @include('catalogo.product')
-    @endforeach
-    @foreach ($products as $product)
-      @include('catalogo.detalle')
-    @endforeach
+<div ng-app="Tienda" ng-controller="CatalogoController">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        @include('catalogo.sidebar')
+      </div>
+      <div class="col-md-9">
+        <div class="row">
+          @foreach ($products as $product)
+            @include('catalogo.product')
+          @endforeach
+        </div>
+        @foreach ($products as $product)
+          @include('catalogo.detalle')
+        @endforeach
+      </div>
+    </div>
   </div>
 </div>
 @stop

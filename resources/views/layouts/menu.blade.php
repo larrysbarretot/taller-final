@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-lg-9">
-          <ul class="nav navbar-nav" >
+          <ul class="nav navbar-nav">
             <li class="nav-item text-xs-center">
               <a href="{{url('/')}}" class="nav-link active"><span class="icon-home-outline"> Home</span></a>
             </li>
@@ -14,10 +14,10 @@
               <a href="{{url('/carrito')}}" class="nav-link"><span class="icon-shopping-cart"> Carrito<span> {{$productsCount}}</span></span></a>
             </li>
             <li class="nav-item text-xs-center">
-              <a href="{{url('/nosotros')}}" class="nav-link"><span class="icon-group">Nosotros</a></span>
+              <a href="{{url('/nosotros')}}" class="nav-link"><span class="icon-group"> Nosotros</span></a>
             </li>
             <li class="nav-item text-xs-center">
-              <a href="{{url('/contacto')}}" class="nav-link"><span class="icon-location">Contacto</a></span>
+              <a href="{{url('/contacto')}}" class="nav-link"><span class="icon-location"> Contacto</span></a>
             </li>
             @if (Auth::guest())
             <li class="nav-item text-xs-center hidden-sm-up">
@@ -58,10 +58,10 @@
   </nav>
   <div id="search-bar" class="container hidden-sm-up">
     <div class="row">
-      <div class="col-xs">
+      <div class="col-xs-12">
         <form>
           <div class="input-group">
-            <input  type="text" class="form-control" placeholder="¿Encontro lo que buscaba?"></input>
+            <input  type="text" class="form-control" placeholder="¿Encontró lo que buscaba?"></input>
             <span class="input-group-btn">
               <button class="btn btn-celperu" type="button">
                 <span class="hidden-sm-down">Buscar</span>

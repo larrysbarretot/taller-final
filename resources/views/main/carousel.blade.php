@@ -9,22 +9,22 @@
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active">
-        <img src="CelularesPeru/imagenes/portada1.jpg" alt="Primer producto">
+        <img src="{{url('CelularesPeru/imagenes/portada1.jpg')}}" alt="Primer producto">
         <div class="carousel-caption">
         </div>
       </div>
       <div class="carousel-item">
-        <img src="CelularesPeru/imagenes/portada2.jpg" alt="Segundo producto">
+        <img src="{{url('CelularesPeru/imagenes/portada2.jpg')}}" alt="Segundo producto">
         <div class="carousel-caption">
         </div>
       </div>
       <div class="carousel-item">
-       <img src="CelularesPeru/imagenes/portada3.jpg" alt="Tercer producto">
+       <img src="{{url('CelularesPeru/imagenes/portada3.jpg')}}" alt="Tercer producto">
        <div class="carousel-caption">
        </div>
      </div>
      <div class="carousel-item">
-      <img src="CelularesPeru/imagenes/portada4.jpg" alt="Cuarto producto">
+      <img src="{{url('CelularesPeru/imagenes/portada4.jpg')}}" alt="Cuarto producto">
       <div class="carousel-caption">
       </div>
     </div>
